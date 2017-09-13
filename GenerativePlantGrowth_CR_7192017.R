@@ -8,13 +8,10 @@ library(ggplot2)
 library(twitteR)
 
 #Initialize the enviornment 
-setup_twitter_oauth("1wRWzoTQruTeqjc6UQAtlC6NT","79v7cbbxRgKTTHUoB5AL9LGxGrFSlzAc8jGwpwi7QIl2Wjzpks")
+setup_twitter_oauth("XXX","XXX")
 
-
-
-#Plant 1
-
-for (i  in 1:2)
+nTweets <- 2 
+for (i  in 1:nTweets)
 {
   randNumDegrees <- runif(1, 15, 40)
   randNumLayers <- runif(1,2,5)
