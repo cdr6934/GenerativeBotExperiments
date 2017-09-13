@@ -7,10 +7,12 @@ library(dplyr)
 library(ggplot2)
 library(twitteR)
 
-#Initialize the enviornment 
+#Initialize the environment 
 setup_twitter_oauth("XXX","XXX")
 
 nTweets <- 2 
+
+# Following uses pattern and then randomizes the degrees and layers that are created 
 for (i  in 1:nTweets)
 {
   randNumDegrees <- runif(1, 15, 40)
